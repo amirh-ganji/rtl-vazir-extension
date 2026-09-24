@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>راست‌چین‌کن + فونت وزیر</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      width: 280px;
+      margin: 0;
+      padding: 16px;
+      font-family: Tahoma, "Segoe UI", sans-serif;
+      background: #f7f8fa;
+      direction: rtl;
+      text-align: right;
+    }
+    h1 {
+      font-size: 15px;
+      margin: 0 0 4px 0;
+      color: #1a1a1a;
+    }
+    h2 {
+      font-size: 12px;
+      margin: 16px 0 6px 0;
+      color: #888;
+      font-weight: 600;
+    }
+    p.desc {
+      font-size: 12px;
+      color: #666;
+      margin: 0 0 12px 0;
+      line-height: 1.7;
+    }
+    button {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 13px;
+      font-family: Tahoma, "Segoe UI", sans-serif;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    button.off {
+      background: #146EA0;
+    }
+    button.off:hover {
+      background: #0f5580;
+    }
+    button.on {
+      background: #d63b3b;
+    }
+    button.on:hover {
+      background: #b32e2e;
+    }
+    button.secondary {
+      background: #fff;
+      color: #146EA0;
+      border: 1px solid #146EA0;
+    }
+    button.secondary:hover {
+      background: #eef6fb;
+    }
+    button.danger-secondary {
+      background: #fff;
+      color: #b32e2e;
+      border: 1px solid #b32e2e;
+    }
+    button.danger-secondary:hover {
+      background: #fdeeee;
+    }
+    .status {
+      margin-top: 4px;
+      font-size: 12px;
+      color: #444;
+      text-align: center;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #e2e4e8;
+      margin: 12px 0;
+    }
+    .footer {
+      margin-top: 14px;
+      font-size: 10px;
+      color: #999;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>راست‌چین‌کن صفحه + فونت وزیر</h1>
+  <p class="desc">
+    کل صفحه یا فقط یک بخش خاص را راست‌به‌چپ کنید و فونت‌ها را به وزیرمتن تغییر دهید.
+  </p>
+
+  <h2>کل صفحه</h2>
+  <button id="toggleBtn" class="off">فعال کردن راست‌چین کل صفحه</button>
+  <div class="status" id="statusText">وضعیت: غیرفعال</div>
+
+  <hr />
+
+  <h2>فقط یک بخش خاص</h2>
+  <button id="pickBtn" class="secondary">انتخاب بخشی از صفحه</button>
+  <button id="clearBtn" class="danger-secondary">پاک‌کردن انتخاب‌های بخشی</button>
+  <div class="status" id="pickStatusText"></div>
+
+  <div class="footer">فقط روی تب فعلی اعمال می‌شود</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
