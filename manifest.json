@@ -3,7 +3,7 @@
   "name": "راست‌چین‌کن + فونت وزیر",
   "version": "1.0.0",
   "description": "با یک کلیک، جهت صفحه را راست‌به‌چپ می‌کند و فونت را به وزیرمتن تغییر می‌دهد. با کلیک دوباره به حالت اول برمی‌گردد.",
-  "permissions": ["activeTab", "scripting", "storage"],
+  "permissions": ["activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_title": "راست‌چین‌کن + فونت وزیر"
