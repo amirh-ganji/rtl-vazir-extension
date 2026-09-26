@@ -25,7 +25,6 @@
     "kbd",
     "samp",
     "var",
-    "textarea",
     ".CodeMirror",
     ".cm-editor",
     ".cm-content",
